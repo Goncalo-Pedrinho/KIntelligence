@@ -1,0 +1,189 @@
+@keyframes border_anim {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 40%;
+	}
+}
+@keyframes border_anim2 {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 35%;
+	}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+.closebtn{
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 0;
+    margin-right: 5px;
+    margin-top: 5px;
+    position: fixed;
+}
+.closebtn img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 1000;
+     background-image: url(../Images/BackgroundColor.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+.header{
+    justify-content: center;
+    display: flex;
+    margin-top: 10%;
+    font-family: 'Pacifico', sans-serif;
+}
+
+.header p{
+    font-family: 'Pacifico', cursive;
+}
+
+.card{
+    z-index: 1000;
+    background-color: white;
+    height: 70%;
+    width: 30%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.buttons{
+    opacity: 100%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    margin-top: 10%;
+    background: transparent;
+    height: 5%;
+    width: 40%;
+    border-radius: 50px;
+}
+.buttons button{
+    position: relative;
+    width: 40%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.registerbtn:focus{
+    content: '';
+    left: 0;
+    border-bottom: 2px solid gray; 
+    animation: border_anim 1s ease;
+}
+.loginbtn:focus{
+    content: '';
+    right: 0;
+    border-bottom: 2px solid gray;
+    animation: border_anim2 1s ease;
+}
+.registerbtn{
+    margin-right: 15%;
+}
+
+.topdiv{
+    margin-top: 10%;
+}
+.bottomdiv{
+    margin-top: 5%;
+    
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    height: 10%;
+    color: black;
+}
+
+.inputs input{
+    font-size: 15px;
+    color: gray;
+    height: 50%;
+    width: 60%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+}
+.inputs input::-webkit-input-placeholder{
+    color: gray;
+}
+
+.logintry{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    height: 7%;
+    margin-top: 5%;
+}
+.logintry button{
+    background-color: transparent;
+    width: 50%;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.textother{
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+    margin-top: 5%;
+    font-size: 13px;
+}
+.textother p{
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbtn{
+    margin-top: 5%;
+}
+.socialmediabutton{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+}
+
