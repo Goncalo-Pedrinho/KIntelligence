@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+    list-style: none;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.options {
+    /* position: absolute; */
+    /* background-color: orange; */
+    width: 10%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.optionList {
+    margin-top: 60%;
+    color: black;
+    z-index: 1000;
+}
+
+.optionItem {
+    background-color: transparent;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    height: 40px;
+    border-radius: 15px;
+    /* border: 1px solid black; */
+    z-index: 1000;
+}
+
+.leave {
+    background-color: rgb(216, 76, 76);
+}
+
+
+
+.optionItem p {
+    font-size: 15px;
+    background-color: transparent;
+
+    text-align: center;
+    vertical-align: middle;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.SetHeader {
+    /* background-color: pink; */
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    margin-left: 15%;
+    margin-top: 5.5%;
+    z-index: 1000;
+
+}
+
+.SetHeader h1 {
+
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.SetHeader p {
+    margin-left: 11%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SubOptions {
+    /* background-color: green; */
+    position: fixed;
+    width: 85%;
+    height: 15%;
+
+    margin-left: 15%;
+    margin-top: 16.4%;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.SubOpta {
+    margin-left: 12%;
+    margin-right: 3%;
+    font-weight: bold;
+    display: block;
+
+}
+
+.SubOpt {
+    margin-left: 0%;
+    margin-right: 3%;
+    font-weight: bold;
+    display: block;
+
+}
+
+
+.ULineAnimation {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.ULineAnimation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+}
+
+.ULineAnimation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+
+
+
+
+
+
+.Settings {
+    /* background-color: blue; */
+    position: fixed;
+    width: 85%;
+    height: 100%;
+    margin-top: 22.3%;
+    margin-left: 15%;
+}
