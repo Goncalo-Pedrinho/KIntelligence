@@ -10,15 +10,11 @@ use  App\Models\Address;
 
 class AddressController extends Controller
 {
-    //  /**
-    //  * Instantiate a new UserController instance.
-    //  *
-    //  * @return void
-    //  */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     public function addressRegister(Request $request)
     {    

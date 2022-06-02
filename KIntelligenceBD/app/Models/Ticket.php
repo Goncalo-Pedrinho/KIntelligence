@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class Employee extends Model
+class ticket extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -21,7 +21,8 @@ class Employee extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'birth', 'email','address','nif', 'phoneNumber', 'cc', 'civilState', 'nib', 'nss', 'dependents', 'category', 'password', 'state'
+        'email', 'description', 'title', 'category', 'clientId', 'EmployeeId'
     ];
+
    
 }

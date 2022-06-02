@@ -22,6 +22,8 @@ class CreateProductsTable extends Migration
             $table->string('category');
             $table->string('subdescription');
             $table->integer('stock');
+            $table->unsignedBigInteger('categoryid');
+            $table->foreign('categoryid')->references('id')->on('categorys');
             $table->timestamps();
         }); 
     }

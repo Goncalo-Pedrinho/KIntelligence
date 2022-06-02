@@ -38,41 +38,17 @@ $router->group(['middleware' => 'cors'], function () use ($router) {
         // Matches "/Kintelligence/employeeregister
         $router->post('employeeregister', 'EmployeeController@employeeregister');
 
-        // // Matches "/api/users/1 
-        // //get one user by id
-        // $router->get('users/{id}', 'UserController@singleUser');
+        // Matches "/Kintelligence/favoriteregister
+        $router->post('favoriteregister', 'FavoritesController@favoriteRegister');
 
-        // // Matches "/api/users
-        // $router->get('users', 'UserController@allUsers');
+        // Matches "/Kintelligence/login
+        $router->post('login', 'AuthController@login');
 
-
-
-        // //Exercício 1: Criar função que recebe uma string e devolve a mesma string como resposta
-        // $router->post('palavra', 'AuthController@excercise1');
-        // //Exercício 2: Criar função que recebe 2 números e devolve a soma dos dois
-        // $router->post('soma', 'AuthController@excercise2');
-        // //Exercício 3: Receber 1 número e verificar se é par ou impar
-        // $router->post('par', 'AuthController@excercise3');
-        // //Exercício 4: Receber tipo de conversão (DollarParaEuro ou EuroParaDollar), o valor  e converter
-        // $router->post('conversao', 'AuthController@excercise4');
-        // //Exercício 5: Receber uma string com varios números separados por um espaço e calcular a soma de todos
-        // $router->post('NumeroString', 'AuthController@excercise5');
-        // //Exercício 6: Adicionar um novo campo à tabela users, (exemplo: morada, cc, telefone) atualizar a base de dados e as funções afetadas
-        // //Função - Users Table //// Register - AuthController // User php
-        // //Exercício 7: Criar função que faz update ao campo adicionado ( no UserController)
-        // $router->post('UpdateCC', 'UserController@updateuserCC');
-        // //Exercício 8:
-        // //Função - Users Table //// Register - AuthController // User php
-        // //Exercício 9: Criar função que faz update a todos os campos ( no UserController)
-        // $router->post('UpdateCC', 'UserController@updateuser');
-
-        // //Registo de Produto
-        // $router->post('productRegister', 'ProductController@registoProduto');
-        // //Devolve todos os produtos
-        // $router->get('showAllProduct', 'ProductController@allProducts');
-
-        // $router->get('showDeterminateProduct', 'ProductController@UserProducts');
-
-        
+        // Matches "/Kintelligence/ticketregister
+        $router->post('ticketregister', 'TicketsController@ticketRegister');
+    
+        // Matches "/Kintelligence/categoryregister
+        $router->post('categoryregister', 'CategoryController@CategoryRegister');
+    
     });
 });
