@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class product extends Model
+class AcquireProduct extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -21,6 +21,8 @@ class product extends Model
      * @var array
      */
     protected $fillable = [
-        'price', 'description', 'model', 'merch', 'subdescription', 'stock'
+        'clientId', 'ProductId', 'date'
     ];
+
+   
 }

@@ -19,11 +19,10 @@ class CreateProductsTable extends Migration
             $table->string('description');
             $table->string('model');
             $table->string('merch');
-            $table->string('category');
             $table->string('subdescription');
             $table->integer('stock');
             $table->unsignedBigInteger('categoryid');
-            $table->foreign('categoryid')->references('id')->on('categorys');
+            $table->foreign('categoryid')->references('id')->on('categories');
             $table->timestamps();
         }); 
     }

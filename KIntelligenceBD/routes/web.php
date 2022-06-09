@@ -49,6 +49,9 @@ $router->group(['middleware' => 'cors'], function () use ($router) {
     
         // Matches "/Kintelligence/categoryregister
         $router->post('categoryregister', 'CategoryController@CategoryRegister');
+        
+        // Matches "/Kintelligence/acquireProductRegister
+        $router->post('acquireProductRegister', 'AcquireProductController@AcquireProductRegister');
     
     });
 });

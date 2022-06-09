@@ -29,7 +29,6 @@ class ProductController extends Controller
             'description' => 'required|string',
             'model' => 'required|string',
             'merch' => 'required|string',
-            'category'=> 'required|string',
             'subdescription'=> 'required|string',
             'stock'=> 'required|int'
             ]);
@@ -40,9 +39,9 @@ class ProductController extends Controller
                 $product->description = $request->input('description');
                 $product->model = $request->input('model');
                 $product->merch = $request->input('merch');
-                $product->category = $request->input('category');
                 $product->subdescription = $request->input('subdescription');
                 $product->stock = $request->input('stock');
+                $product->categoryid = $request->input('categoryid');
                 $product->save();
 
                 return response()->json(['product' => $product, 'message' => 'CREATED'], 201);

@@ -24,7 +24,7 @@ class CategoryController extends Controller
                 $category->name = $request->input('name');
                 $category->save();
 
-                return response()->json(['category' => $category, 'message' => 'CREATED'.$e], 201);
+                return response()->json(['category' => $category, 'message' => 'CREATED'], 201);
         } catch (\Exception $e) {
             //return error message
             return response()->json(['message' => 'category Registration Failed!'.$e], 409);

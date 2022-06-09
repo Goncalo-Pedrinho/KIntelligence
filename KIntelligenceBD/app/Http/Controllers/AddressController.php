@@ -44,32 +44,6 @@ class AddressController extends Controller
             return response()->json(['message' => 'Address Registration Failed!'.$e], 409);
         }
     }
-
-
-
-    
-    // /**
-    //  * Get all Products.
-    //  *
-    //  * @return Response
-    //  */
-    // public function GetAllAdresses()
-    // {
-    //     $address = Auth::address();
-
-    //     $address = Address::where('address', $address->address) ->get();
-
-    //     return response()->json(['address' =>  Address::all()], 200);
-    // } 
-
-    // /**
-    //  * Get all Products.
-    //  *
-    //  * @return Response
-    //  */
-    // public function allAdresses()
-    // {
-    //      return response()->json(['adress' =>  Adress::all()], 200);
-    // }       
+     
 }
 
