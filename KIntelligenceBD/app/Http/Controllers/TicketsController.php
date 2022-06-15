@@ -33,9 +33,9 @@ class TicketsController extends Controller
                     $Ticket = new Ticket;
                     $Ticket->userid = $user->id;
                     $Ticket->email = $request->input('email');
-                    $Ticket->email = $request->input('description');
-                    $Ticket->email = $request->input('title');
-                    $Ticket->email = $request->input('category');
+                    $Ticket->description = $request->input('description');
+                    $Ticket->title = $request->input('title');
+                    $Ticket->category = $request->input('category');
                     $Ticket->save();
                
                 return response()->json(['Ticket' => $Ticket, 'message' => 'CREATED'], 201);

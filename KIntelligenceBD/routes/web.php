@@ -26,30 +26,83 @@ $router->group(['middleware' => 'cors'], function () use ($router) {
 
     // API route group
     $router->group(['prefix' => 'Kintelligence'], function () use ($router) {
+        
+        /*
+        *
+        *   ADDRESS
+        *
+        */
         // Matches "/Kintelligence/addressregister 
         $router->post('addressregister', 'AddressController@addressRegister');
 
+        /*
+        *
+        *   ADDRESSES JUNCTION
+        *
+        */
+        // Matches "/Kintelligence/newJunctionController 
+        $router->post('newJunctionController', 'JunctionAddressesController@JunctionAdressesRegister');
+
+        /*
+        *
+        *   USER
+        *
+        */
         // Matches "/Kintelligence/userregister
         $router->post('userregister', 'AuthController@userregister');
+        // Matches "/Kintelligence/usereditor
+        $router->post('usereditor', 'AuthController@usereditor');
+        // Matches "/Kintelligence/login
+        $router->post('login', 'AuthController@login');
+        // Matches "/Kintelligence/getOneUserByName
+        $router->get('getOneUserByName', 'AuthController@getOneUserByName');
+       
 
+        /*
+        *
+        *   PRODUCTS
+        *
+        */
         // Matches "/Kintelligence/productregister
         $router->post('productregister', 'ProductController@productRegister');
 
+        /*
+        *
+        *   EMPLOYES
+        *
+        */
         // Matches "/Kintelligence/employeeregister
         $router->post('employeeregister', 'EmployeeController@employeeregister');
 
+        /*
+        *
+        *   FAVORITES
+        *
+        */
         // Matches "/Kintelligence/favoriteregister
         $router->post('favoriteregister', 'FavoritesController@favoriteRegister');
 
-        // Matches "/Kintelligence/login
-        $router->post('login', 'AuthController@login');
-
+        /*
+        *
+        *   TICKETS
+        *
+        */
         // Matches "/Kintelligence/ticketregister
         $router->post('ticketregister', 'TicketsController@ticketRegister');
     
+        /*
+        *
+        *   CATEGORIES
+        *
+        */
         // Matches "/Kintelligence/categoryregister
         $router->post('categoryregister', 'CategoryController@CategoryRegister');
         
+        /*
+        *
+        *   ACQUIRES
+        *
+        */
         // Matches "/Kintelligence/acquireProductRegister
         $router->post('acquireProductRegister', 'AcquireProductController@AcquireProductRegister');
     

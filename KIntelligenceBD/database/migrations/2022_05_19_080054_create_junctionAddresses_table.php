@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAcquireProductsTable extends Migration
+class CreateJunctionAddressesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateAcquireProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('acquire_products', function (Blueprint $table) {
+        Schema::create('junction_adresses', function (Blueprint $table) {
             $table->unsignedBigInteger('clientId')->unsigned(); 
             $table->foreign('clientId')->references('id')->on('users');
-            $table->unsignedBigInteger('productId')->unsigned();
-            $table->foreign('productId')->references('id')->on('Products');
-            $table->date('date');
+            $table->unsignedBigInteger('addressId')->unsigned();
+            $table->foreign('addressId')->references('id')->on('Addresses');
             $table->timestamps();
         }); 
     }
@@ -30,6 +29,6 @@ class CreateAcquireProductsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('acquire_products');
+        Schema::dropIfExists('junction_adresses');
     }
 }

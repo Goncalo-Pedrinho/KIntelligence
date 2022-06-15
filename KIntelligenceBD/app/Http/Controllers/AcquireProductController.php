@@ -11,7 +11,7 @@ use  App\Models\Product;
 use  App\Models\Favorite;
 use  App\Models\AcquireProduct;
 
-class AcquireProducts extends Controller
+class AcquireProductController extends Controller
 {
     public function AcquireProductRegister(Request $request)
     {    
@@ -24,12 +24,13 @@ class AcquireProducts extends Controller
                 
                 $user = Auth::user();  
 
-                $AcquireProcuct = new AcquireProcuct;
-                $AcquireProcuct->clientId = $user->id;
-                $AcquireProcuct->productId = $request->input('productId');
-                $AcquireProcuct->save();
+                $AcquireProduct = new AcquireProduct;
+                $AcquireProduct->clientId = $user->id;
+                $AcquireProduct->productId = $request->input('productId');
+                $AcquireProduct->date = $request->input('date');
+                $AcquireProduct->save();
 
-                return response()->json(['AcquireProcuct' => $AcquireProcuct, 'message' => 'CREATED'], 201);
+                return response()->json(['AcquireProcuct' => $AcquireProduct, 'message' => 'CREATED'], 201);
         } catch (\Exception $e) {
             //return error message
             return response()->json(['message' => 'AcquireProcuct Registration Failed!'.$e], 409);
