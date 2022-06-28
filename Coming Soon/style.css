@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.container{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 7%;
+    background: #eee;
+    min-height: 100vh;
+    gap: 15px;
+    padding-bottom: 80px;
+
+}
+
+.container .content{
+    flex: 1 1 400px;
+}
+
+.container .image{
+    flex: 1 1 400px;
+}
+
+.container .image img{
+    width: 100%;
+}
+
+.container .content .title{
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #37474f;
+}
+
+.container .content p{
+    padding: 5px 0;
+    color: #4d4c4c ;
+}
+
+.container .content .count-down{
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.container .content .count-down .box{
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #3333;
+    text-align: center;
+    flex: 1 1 20px;
+}
+
+.container .content .count-down .box h3{
+    font-size: 50px;
+    color: #333;
+}
+
+.container .content .count-down .box span{
+    color: #37474f;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+@media (max-width:500px) {
+    .container{
+        padding: 20px;
+    }
+    .container .content{
+        text-align: center;
+    }
+    .container .content .title{
+        font-size: 35px;
+    }
+    .container .content p{
+        font-size: 14px;
+    }
+    .container .content .count-down{
+        gap: 5px;
+    }
+    .container .content .count-down h3{
+        font-size: 30px;
+    }
+    .container .content .count-down span{
+        font-size: 15px;
+    }
+}

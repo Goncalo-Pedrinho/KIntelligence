@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>First Page</title>
+  <title>Favorites Page</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="./script.js"></script>
 </head>
 
 <body>
@@ -84,24 +85,56 @@
     </div>
   </nav>
 
-
-
-
   <div class="body-text">
-      <div class="categories">
-        <div class="categories-btn">
-          <div class="top-btn">
-            <button> <i><img src="" alt=""></i>Portáteis </button>
-            <button> <i> <img src="" alt=""></i>Desktops </button>
-            <button> <i><img src="" alt=""></i> All-In-One </button>
+      <div class="left-side">
+      
+        <div class="images">
+
+          <div class="mainImg">
+            <img src="../Images/imagensTeste/laptop.png" alt="" id="mainImage">
+            <div class="favoriteImg">
+              <img src="../Images/imagensTeste/3643770_favorite_heart_like_likes_love_icon.png" alt="" class="favoriteIcon">
+            </div>
           </div>
-          <div class="bottom-btn">
-            <button> Periféricos </button>
-            <button> Componentes </button>
-            <button> Configurador </button>
+          <!-- <div class="DinamicImages">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+          </div> -->
+          <div class="headers">
+            <h2 class="name h"> Asus TUF F15</h2>
+            <h6 class="model h">FX506 15.6" i5 8GB 512GB GTX 1650 144Hz</h6>
+            <h3 class="price h">599,00 €</h3>
+            <div class="buyBtn"> <p> Adicionar ao carrinho </p> </div>
           </div>
+
+          <div class="secImg">
+            <table>
+              <tr>
+                <th onclick="ChangeImage()" id="image1"><img src="../Images/imagensTeste/laptop.png" alt=""></th>
+              </tr>
+              <tr>
+                <th onclick="ChangeImage()" id="image2"><img src="../Images/imagensTeste/4.png" alt=""></th>
+              </tr>
+              <tr>
+                <th onclick="ChangeImage()" id="image3"><img src="../Images/imagensTeste/3.png" alt=""></th>
+              </tr>
+              <tr>
+                <th onclick="ChangeImage()" id="image4"><img src="../Images/imagensTeste/2.png" alt=""></th>
+              </tr>
+              <tr>
+                <th onclick="ChangeImage()" id="image5"><img src="../Images/imagensTeste/1.png" alt=""></th>
+              </tr>
+            </table> 
+          </div>
+
         </div>
+        
       </div>
+
+     
   </div>
 </body>
 </html>

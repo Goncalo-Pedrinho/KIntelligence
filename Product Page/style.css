@@ -269,6 +269,7 @@ nav input{
   width: 70%;
   text-align: center;
   padding: 0 30px;
+  /*border: 1px solid black;*/
 }
 
 /* .body-text div{
@@ -282,27 +283,71 @@ nav input{
 *
 */
 
-.body-text{
-  background-color: transparent;
-  border: 1px solid black;
+
+.images{
+  float: left;
 }
 
-.categories-btn{
-  background-color: red;
+.mainImg{
+  text-align: left;
+  width: 350px;
+  height: 350px;
+  /* border: 2px solid orange; */
+  margin-top: 200px;
 }
 
-.categories-btn button{
-  width: 20%;
-  height: 50px;
-  margin-bottom: 15px;
-  border-radius: 5px;
+.mainImg img{
+  width: 100%;
+  height: 100%;
+}
+
+.favoriteImg{
   cursor: pointer;
-
 }
 
-.categories-btn button img{
-  height: 40px;
+.favoriteImg img{
+
   width: 40px;
+  height: 40px;
+  position: fixed;
+  margin-left: 295px;
+  margin-top: -8px;
+
 }
 
+.secImg{
+  cursor: pointer;
+  display: flex;
+  margin-left: 380px;
+  margin-top: -320px;
+  
+}
 
+.secImg img{
+  /* border: 1px solid red; */
+  height: 60px;
+  width: 60px;
+}
+
+.headers{
+  float: left;
+  text-align: left;
+  
+}
+
+.h{
+  margin-bottom: 5px;
+}
+
+.buyBtn{
+  cursor: pointer;
+  width: 350px;
+  background-color: #3A3B3C;
+  height: 40px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  display: flex;
+}
